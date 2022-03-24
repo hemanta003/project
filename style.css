@@ -9,11 +9,37 @@ Author URI:www.gtcsys.com
     margin: 0%;
     box-sizing: border-box;
 }
+/* navigation design  */
+
+a{
+    text-decoration: none;
+    margin: 0px 30px;
+}
+img{
+    height: 40px;
+}
+/* aboutus page decoration  */
+.about-content{
+    border: 2px solid green   ;
+}
+.wp-block-image{
+    display:inline;
+}
+
+.wp-block-image img{
+        width: 300px;
+    height: auto;
+}
+.about-content>img{
+    height: auto;
+}
+/* aboutus page decoration end  */
 .post{
     display: flex;
     border: 2px solid gray;
     padding: 10px;
 }
+
 .post-item img{
     width: 320px;
     height: 200px;
@@ -36,9 +62,7 @@ Author URI:www.gtcsys.com
     height: 20px;
 }
 
-.container{
-    border: 2px solid red;
-}
+
 .col-1{background-color: aqua;}
 .col-2{background-color: rgb(21, 194, 99);}
 .col-3{background-color: black;}
