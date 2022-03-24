@@ -10,8 +10,11 @@
 </head>
 <body>
     <!-- header part starting -->
+    <?php
+    $logoimg=get_header_image();
+    ?>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#home"><img src="<?php echo get_template_directory_uri(); ?>/images/logo2.jpg" alt="logo2"></a>
+  <a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php echo $logoimg; ?>"></a>
   
   <?php
 wp_nav_menu(array('theme_location'=>'primary-menu','menu_class'=>'nav'));
