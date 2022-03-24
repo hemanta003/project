@@ -74,3 +74,7 @@ img{
 .lower-side img{
     width: 0px;
 }
+/* designing contactus template page  */
+.contact-template{
+    border: 2px solid yellowgreen;
+}
