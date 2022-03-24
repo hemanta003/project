@@ -10,7 +10,8 @@ the_post();
 echo get_the_content();
 
 ?>
-<?php $imagepath=wp_get_attachment_image_src(get_post_thumbnail_id(),'thumbnail') ?>
+<?php $imagepath=wp_get_attachment_image_src(get_post_thumbnail_id(),'thumbnail');
+ ?>
 <img src="<?php echo $imagepath[0] ?>" alt="">
 </div>
 
