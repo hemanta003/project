@@ -78,3 +78,11 @@ img{
 .contact-template{
     border: 2px solid yellowgreen;
 }
+/* active page decoration  */
+.current_page_parent,.current-menu-item{
+     border-bottom: 2px solid red;
+}
+.current_page_parent a,.current-menu-item a{
+    font-size: 20px;
+    color: rgba(4, 194, 14, 0.5);
+}
