@@ -83,14 +83,14 @@ img{
     border: 2px solid yellowgreen;
 }
 /* active page decoration  */
-.current_page_parent,.current-menu-item{
-     border-bottom: 2px solid red;
-}
-.current_page_parent a,.current-menu-item a{
-    font-size: 20px;
+
+.current_page_parent>a,.current-menu-item>a{
+   
+    border-bottom: 2px solid red;
+     font-size: 20px;
     color: rgba(4, 194, 14, 0.5);
 }
-/* decorating comment form  */
+/* decorating comment form  
 .comment-form label{
 display: block;
 
@@ -106,4 +106,33 @@ padding-left: 10px;
 .comment-form input[type='text']{
 width: 80%;
 height: 40px;
+}
+commented because comment_form removed*/
+.commentlist li{
+list-style: none;
+margin-bottom: 20px;
+}
+.comment-body{
+    background-color: rgba(111, 66, 88, 0.4);
+}
+.sub-menu{
+    
+    top: 100%;
+   background: rgb(212, 235, 129); 
+   opacity: 0;
+   visibility: hidden;
+}
+.sub-menu li{
+    list-style: none;
+    padding: 10px;
+}
+.nav>li:hover .sub-menu{
+    opacity: 1;
+    visibility: visible;
+    transition: 2s;
+}
+.nav>li{
+    list-style: none;
+    margin: 0px 30px;
+    position: relative;
 }
