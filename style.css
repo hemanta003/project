@@ -90,3 +90,20 @@ img{
     font-size: 20px;
     color: rgba(4, 194, 14, 0.5);
 }
+/* decorating comment form  */
+.comment-form label{
+display: block;
+
+}
+.comment-form{
+margin-left: 10px;
+padding-left: 10px;
+}
+.comment-form textarea{
+    width: 80%;
+    height: 80px;
+}
+.comment-form input[type='text']{
+width: 80%;
+height: 40px;
+}
