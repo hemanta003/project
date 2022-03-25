@@ -12,7 +12,9 @@ $imagepath=wp_get_attachment_image_src(get_post_thumbnail_id(),'medium');
 <?php echo the_excerpt();?>
 <?php echo get_the_date(); ?>
 <?php echo get_the_time(); ?>
+<a href="<?php the_permalink();?>"><input type="button" value="Read More.."></a>
 </div>
+
 <?php } ?> 
 
 </div>
