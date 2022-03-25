@@ -39,13 +39,14 @@ img{
 }
 /* aboutus page decoration end  */
 .post{
+    width: 100%;
     display: flex;
     border: 2px solid gray;
     padding: 10px;
 }
 
 .post-item img{
-    width: 320px;
+    width: 280px;
     height: 200px;
     margin: 20px;
 }
@@ -137,7 +138,8 @@ margin-bottom: 20px;
     position: relative;
 }
 h1,h2{
-    color: rgba(240, 138, 167, 0.89);
+    background-color: rgba(51, 238, 60, 0.1);
+    color: rgba(138, 103, 241, 0.89);
 }
 /* 404page design  */
 .pagenotfound{
