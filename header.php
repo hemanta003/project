@@ -9,7 +9,8 @@
     <title><?php bloginfo('name'); ?>|<?php wp_title();?> |<?php if (is_front_page()){ bloginfo('description'); }?></title>
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
+  
     <!-- header part starting -->
     <?php
     $logoimg=get_header_image();
