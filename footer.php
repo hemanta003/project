@@ -90,3 +90,6 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+</body>
+</html>
+<?php wp_footer(); ?>

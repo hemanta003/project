@@ -13,10 +13,10 @@ $imagepath=wp_get_attachment_image_src(get_post_thumbnail_id(),'medium');
 <?php echo get_the_date(); ?>
 <?php echo get_the_time(); ?>
 </div>
-<?php } ?>
+<?php } ?> 
 
 </div>
-
+<?php echo wp_pagenavi() ?>
 
 <?php get_footer();
 ?>

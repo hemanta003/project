@@ -18,6 +18,10 @@ a{
 img{
     height: 40px;
 }
+
+.navbar img{
+    height: 50px;
+}
 /* aboutus page decoration  */
 .about-content{
     border: 2px solid green   ;
