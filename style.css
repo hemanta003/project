@@ -173,3 +173,9 @@ h3{
     text-shadow: 4px;
     color: aliceblue;
 }
+
+
+.news>img{
+    width: 30px;
+    height: 20px;
+}

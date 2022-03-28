@@ -77,6 +77,22 @@ while($newsquery->have_posts()) {
 </div>
 
 
+
+
+
+<h3>latest News Catagory</h3>
+<?php
+$newscat=get_terms(['taxonomy'=>'news_catagory','hide_empty'=>false]);
+
+foreach($newscat as $newscatdata) {
+
+?>
+<div class="news">
+<img src="<?php bloginfo('template_directory'); ?>/images/c.jpg" alt=""><a href="#"><?php  echo  $newscatdata->name ?></a>
+
+
+</div>
+<?php } ?>
 <?php
 get_footer();
 ?>
