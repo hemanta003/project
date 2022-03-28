@@ -82,13 +82,20 @@ while($newsquery->have_posts()) {
 
 <h3>latest News Catagory</h3>
 <?php
-$newscat=get_terms(['taxonomy'=>'news_catagory','hide_empty'=>false]);
+$newscat=get_terms(['taxonomy'=>'news_catagory','hide_empty'=>false,'parent'=>0]);
 
 foreach($newscat as $newscatdata) {
 
+  $meta_image = get_wp_term_image($newscatdata->term_id);
+
+
 ?>
 <div class="news">
-<img src="<?php bloginfo('template_directory'); ?>/images/c.jpg" alt=""><a href="#"><?php  echo  $newscatdata->name ?></a>
+<?php  if($meta_image!="") { ?>
+<img src="<?php print_r($meta_image); ?>">
+<?php } ?>
+
+<a href="<?php echo get_category_link($newscatdata->term_id); ?>"><?php  echo  $newscatdata->name ?></a>
 
 
 </div>

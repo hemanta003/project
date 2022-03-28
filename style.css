@@ -15,6 +15,9 @@ a{
     text-decoration: none;
     margin: 0px 30px;
 }
+p{
+    color: blue;
+}
 img{
     height: 40px;
 }
