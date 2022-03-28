@@ -51,7 +51,30 @@ foreach($cat as $catvalue){
   <?php } ?> 
 
 </div>
+<hr>
+<h2>Latest News</h2>
+<div class="lowerppost">
+  <?php
+$wpnews=array('post_type'=>'news','post_status'=>'publish');
 
+
+$newsquery=new Wp_Query($wpnews);
+while($newsquery->have_posts()) {
+  $newsquery->the_post();
+
+
+  // get the imagepath
+  $imagepath=wp_get_attachment_image_src(get_post_thumbnail_id(),'medium');
+?>
+  
+<div class="box">
+<img src="<?php echo $imagepath[0] ?>"/>
+<h3><?php the_title(); ?></h3>
+<?php echo get_the_date() ?><br>
+<button><?php the_title(); ?></button>
+</div>
+<?php } ?>
+</div>
 
 
 <?php

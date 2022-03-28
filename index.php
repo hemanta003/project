@@ -18,6 +18,9 @@ $imagepath=wp_get_attachment_image_src(get_post_thumbnail_id(),'medium');
 <?php } ?> 
 
 </div>
+
+
+
 <?php dynamic_sidebar('sidebar'); ?>
 <?php echo wp_pagenavi() ?>
 

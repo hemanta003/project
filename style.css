@@ -139,7 +139,10 @@ margin-bottom: 20px;
 }
 h1,h2{
     background-color: rgba(51, 238, 60, 0.1);
-    color: rgba(138, 103, 241, 0.89);
+    color: rgba(201, 184, 252, 0.89);
+}
+h3{
+    color: aliceblue;
 }
 /* 404page design  */
 .pagenotfound{
@@ -150,4 +153,23 @@ h1,h2{
     margin-top: 40px;
     padding: 40px;
     background-color: rgb(107, 250, 107);
+}
+.lowerppost{
+    display: flex;
+    border: 2px solid red;
+}
+.box>img{
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+.box>button{
+    text-align: center;
+    width: 300px;
+    height: auto;
+    font-size: 20px;
+    background-color: rgba(111, 99, 66, 0.4);
+    text-shadow: 4px;
+    color: aliceblue;
 }
